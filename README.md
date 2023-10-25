@@ -1,8 +1,5 @@
 # Professional README Generator
 
-Website: URL
-![Screenshot](assets/images/png)
-
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
@@ -18,7 +15,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Codes Used](#codes_used)
+- [Codes Used](#codes-used)
 
 ## Installation
 
