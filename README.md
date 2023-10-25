@@ -26,7 +26,7 @@ Install the node modules:
 
 To run this application, you will need to go into your terminal and type in "node index.js" into the command line. You will then be prompted to answer some questions regarding what kind of information you would like to input into your README. Once you are done answering all the questions, the generator will create a new README.md file within the "Develop" folder. You will see that all your information should be in there. If you happen to answer "no" to any of the prompt, the application will automatically input "N/A" into that section.
 
-![Tutorial](https://drive.google.com/file/d/1Of8ZUe99N9lpgbEj8l5sq9tDW9BVLG23/view)
+[Tutorial](https://drive.google.com/file/d/1Of8ZUe99N9lpgbEj8l5sq9tDW9BVLG23/view)
 
 ## Credits
 
