@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Condition the license badge based on the user's answer to the license prompt
 function renderLicenseBadge(data) {
   if (data.license === "MIT License") {
     return "![License](https://img.shields.io/badge/License-MIT-blue.svg)";
@@ -22,8 +21,7 @@ function renderLicenseBadge(data) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Condition the license content based on the user's answer to the license prompt
 function renderLicenseSection(data) {
   const year = new Date().getFullYear();
 
@@ -64,7 +62,7 @@ function renderLicenseSection(data) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Generate the markdown of the README file with the user's input 
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data)}
@@ -77,7 +75,7 @@ function generateMarkdown(data) {
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributors](#how-to-contribute)
+  - [Contribution](#how-to-contribute)
   - [Tests](#tests)
   - [Questions](#questions)
 

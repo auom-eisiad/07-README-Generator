@@ -1,21 +1,21 @@
-// TODO: Include packages needed for this application
+// The required modules needed imported
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// Array of questions to prompt the user for their input
 const questions = [
   {
     type: "input",
     name: "title",
-    message: "What the name of your project?",
+    message: "What is the name of your project?",
   },
 
   {
     type: "input",
     name: "description",
-    message: "Please provide a breif description of your project:",
+    message: "Please provide a brief description of your project:",
   },
 
   {
@@ -27,7 +27,7 @@ const questions = [
   {
     type: "input",
     name: "installation",
-    message: "What are the installations required?",
+    message: "What are the installation(s) required?",
     when: (answers) => answers.confirmInstall,
   },
 
@@ -66,7 +66,7 @@ const questions = [
     type: "input",
     name: "contribution",
     message:
-      "Please provide a breif explanation how developers can contribute to your application/ package:",
+      "Please provide a brief explanation how developers can contribute to your application/ package:",
     when: (answers) => answers.confirmContribution,
   },
 
@@ -97,7 +97,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// function to write the data to the fileName and if an error occurs, console log the error
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
@@ -106,7 +106,7 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app
+// Take in the user's input and create a README.md file and if error occurs, console log the error. Else, console log the file created successfully
 function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log("Processing...");
